@@ -1,0 +1,43 @@
+---- 2025-11-10 14:39:04 ----
+Payload: {"source":"Popup Form","name":"goadsindia","email":"test@goads.com","phone":"9978446995","message":"test"}
+HTTP Code: 201
+Response: {"success":true,"data":{"source":"Popup Form","name":"goadsindia","email":"test@goads.com","phone":"9978446995","platformId":19,"other":"{\"message\":\"test\"}"}}
+Error: 
+
+
+---- 2025-11-10 15:36:26 ----
+Payload: {"source":"Popup Form","name":"sisodiya dharmendrasinh","email":"dharmendrasinh@gmail.com","phone":"8490869975","message":"test"}
+HTTP Code: 201
+Response: {"success":true,"data":{"source":"Popup Form","name":"sisodiya dharmendrasinh","email":"dharmendrasinh@gmail.com","phone":"8490869975","platformId":19,"other":"{\"message\":\"test\"}"}}
+Error: 
+
+---- 2025-11-10 15:46:41 ----
+Payload: {"source":"Website Form","name":"rutvik","email":"test123@goads.com","phone":"9978446995","message":"test"}
+HTTP Code: 409
+Response: {"success":false,"message":"This phone already exists."}
+Error: 
+
+---- 2025-11-10 15:48:09 ----
+Payload: {"source":"Website Form","name":"rutvik","email":"rutvik@gmail.com","phone":"1234567808","message":"testtest"}
+HTTP Code: 201
+Response: {"success":true,"data":{"source":"Website Form","name":"rutvik","email":"rutvik@gmail.com","phone":"1234567808","platformId":19,"other":"{\"message\":\"testtest\"}"}}
+Error: 
+
+---- 2025-11-10 15:53:08 ----
+Payload: {"source":"Popup Form","name":"Bhargav","email":"bhargav@indiantradebird.com","phone":"9595959595","message":"Test"}
+HTTP Code: 201
+Response: {"success":true,"data":{"source":"Popup Form","name":"Bhargav","email":"bhargav@indiantradebird.com","phone":"9595959595","platformId":19,"other":"{\"message\":\"Test\"}"}}
+Error: 
+
+---- 2025-11-10 15:56:00 ----
+Payload: {"source":"Contact Us","name":"dharmendra s","email":"komal.goadsindia@gmail.com","phone":"1234567897","message":"test"}
+HTTP Code: 201
+Response: {"success":true,"data":{"source":"Contact Us","name":"dharmendra s","email":"komal.goadsindia@gmail.com","phone":"1234567897","platformId":19,"other":"{\"message\":\"test\"}"}}
+Error: 
+
+---- 2025-11-10 16:01:56 ----
+Payload: {"source":"Popup Form","name":"Amandeep Gagein","email":"Amangagein@gmail.com","phone":"9416547090","message":"NA"}
+HTTP Code: 201
+Response: {"success":true,"data":{"source":"Popup Form","name":"Amandeep Gagein","email":"Amangagein@gmail.com","phone":"9416547090","platformId":19,"other":"{\"message\":\"NA\"}"}}
+Error: 
+

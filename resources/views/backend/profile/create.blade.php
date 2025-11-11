@@ -1,0 +1,221 @@
+@extends('backend.layout.master')
+@section('contant')
+<!--begin::Wrapper-->
+<div class="d-flex flex-column flex-row-fluid wrapper" id="kt_wrapper">
+	<!--begin::Card-->
+	<div class="card card-custom gutter-b example example-compact">
+		<div class="card-header">
+			<h3 class="card-title">Store Profile</h3>
+		</div>
+		<!--begin::Form-->
+		<div class="row">
+			<div class="col-md-12">
+				<div class="box box-pink">
+					<div class="box-content">
+						<form method="post" action="{{route('admin.profilestore')}}" enctype='multipart/form-data'>
+							@csrf
+							<div role="form" class="form-horizontal">
+								<div class="form-group-select">
+									<label class="col-sm-3 col-lg-2 control-label">First Name<span style="color: #a94442;">*</span></label>
+									<div class="col-sm-9 col-lg-6 controls">
+										<input name="fname" type="text"  class="form-control" data-rule-required="true" data-rule-minlength="3" value="{{old('fname')}}"/>
+										
+										<span class="text-danger">
+											@error("fname")
+											{{$message}}
+											@enderror
+										</span>
+									</div>
+									
+								</div>
+								<div class="form-group-select">
+									<label class="col-sm-3 col-lg-2 control-label">Last Name<span style="color: #a94442;">*</span></label>
+									<div class="col-sm-9 col-lg-6 controls">
+										<input name="lname" type="text" class="form-control" data-rule-required="true" data-rule-minlength="3" value="{{old('lname')}}"/>
+										<span class="text-danger">
+										@error("lname")
+										{{$message}}
+										@enderror
+									</span>
+									</div>
+									
+								</div>
+								<div class="form-group-select">
+									<label class="col-sm-3 col-lg-2 control-label">Designation<span style="color: #a94442;">*</span></label>
+									<div class="col-sm-9 col-lg-6 controls">
+										<textarea  name="designation" type="text"  class="form-control" data-rule-required="true" data-rule-minlength="3" value="{{old('designation')}}"></textarea>
+										<span class="text-danger">
+										@error("designation")
+										{{$message}}
+										@enderror
+										</span>
+									</div>
+									<div class="col-sm-9 col-lg-4 controls">
+										<span class="switch switch-sm">
+											<label>
+												<input type="checkbox" checked="checked" name="des" value="1">
+												<span></span>
+											</label>
+										</span>
+									</div>
+								</div>
+								
+								<div style="display: none" class="form-group-select">
+									<label class="col-sm-3 col-lg-2 control-label">Gender</label>
+									<div class="col-sm-9 col-lg-6 controls">
+										<label class="radio-inline">
+											<input value="Male" name="gender" type="radio" id="txtgender1" checked="" />
+											Male
+										</label>
+										<label class="radio-inline">
+											<input value="Female" name="gender" type="radio" id="txtgender2" />
+											Female
+										</label>
+									</div>
+								</div>
+								
+								<div class="form-group-select">
+									<label class="col-sm-3 col-lg-2 control-label">Email <span style="color: #a94442;">*</span></label>
+									<div class="col-sm-9 col-lg-6 controls">
+										<input name="email" type="email" class="form-control" data-rule-required="true" data-rule-email="true" value="{{old('email')}}"/>
+										<span class="text-danger">
+										@error("email")
+										{{$message}}
+										@enderror
+										</span>
+									</div>
+									<div class="col-sm-9 col-lg-4 controls">
+										<span class="switch switch-sm">
+											<label>
+												<input type="checkbox" checked="checked" name="ema" value="1">
+												<span></span>
+											</label>
+										</span>
+									</div>
+								</div>
+								<div class="form-group-select">
+									<label class="col-sm-3 col-lg-2 control-label">Email 2</label>
+									<div class="col-sm-9 col-lg-6 controls">
+										<input name="email2" type="email" class="form-control" value="{{old('email2')}}"/>
+									</div>
+								</div>
+								<div class="form-group-select">
+									<label class="col-sm-3 col-lg-2 control-label">Contact Number <span style="color: #a94442;">*</span></label>
+									<div class="col-sm-9 col-lg-6 controls">
+										<input name="contact_no1" type="text"  class="form-control" data-rule-number="true" data-rule-required="true" data-mask="(999) 999-9999" value="{{old('contact_no1')}}"/>
+										<span class="text-danger">
+										@error("contact_no1")
+										{{$message}}
+										@enderror
+										</span>
+									</div>
+									<div class="col-sm-9 col-lg-4 controls">
+										<span class="switch switch-sm">
+											<label>
+												<input type="checkbox" checked="checked" name="con1" value="1">
+												<span></span>
+											</label>
+										</span>
+									</div>
+								</div>
+								<div class="form-group-select">
+									<label class="col-sm-3 col-lg-2 control-label">Contact Number 2</label>
+									<div class="col-sm-9 col-lg-6 controls">
+										<input name="contact_no2" type="text"  class="form-control" data-mask="(999) 999-9999" value="{{old('contact_no2')}}"/>
+									</div>
+									<div class="col-sm-9 col-lg-4 controls">
+										<span class="switch switch-sm">
+											<label>
+												<input type="checkbox" checked="checked" name="con2" value="1">
+												<span></span>
+											</label>
+										</span>
+									</div>
+								</div>
+								<div class="form-group-select">
+									<label class="col-sm-3 col-lg-2 control-label">Contact Number 3</label>
+									<div class="col-sm-9 col-lg-6 controls">
+										<input name="contact_no3" type="text" class="form-control" data-mask="(999) 999-9999"  value="{{old('contact_no3')}}"/>
+									</div>
+									<div class="col-sm-9 col-lg-4 controls">
+										<span class="switch switch-sm">
+											<label>
+												<input type="checkbox" checked="checked" name="con3" value="1">
+												<span></span>
+											</label>
+										</span>
+									</div>
+								</div>
+								</div>
+
+								<div class="form-group-select">
+									<label class="col-sm-3 col-lg-2 control-label" for="username">Image Upload<span style="color: #a94442;">*</span></label>
+									<div class="col-sm-6 col-lg-4 controls">
+										<input name="profile" type="file" class="form-control" data-rule-required="true" data-rule-minlength="3" />
+										<span class="text-danger">
+										@error("profile")
+										{{$message}}
+										@enderror
+										</span>
+									</div>
+								</div>
+								<div class="form-group-select">
+									<label class="col-sm-3 col-lg-2 control-label">Address <span style="color: #a94442;">*</span></label>
+									<div class="col-sm-9 col-lg-6 controls">
+										
+										<textarea name="address1" rows="5" cols="20" id="txtaddress" class="form-control wysihtml5"></textarea>
+										<span class="text-danger">
+										@error("address1")
+										{{$message}}
+										@enderror
+										</span>
+									</div>
+									<div class="col-sm-9 col-lg-4 controls">
+										<span class="switch switch-sm">
+											<label>
+												<input type="checkbox" checked="checked" name="add1" value="1">
+												<span></span>
+											</label>
+										</span>
+									</div>
+								</div>
+								<div class="form-group-select">
+									<label class="col-sm-3 col-lg-2 control-label">Address </label>
+									<div class="col-sm-9 col-lg-6 controls">
+										<textarea name="address2" class="form-control wysihtml6" rows="6"></textarea>
+									</div>
+									<div class="col-sm-9 col-lg-4 controls">
+										<span class="switch switch-sm">
+											<label>
+												<input type="checkbox" checked="checked" value="1" name="add2">
+												<span></span>
+											</label>
+										</span>
+									</div>
+								</div>
+								<div class="form-group-select">
+								<lable class="col-sm-3 col-lg-2 control-label">Status</lable>
+								<div class="col-sm-6 col-lg-4 controls">
+								<select class="form-control" aria-label="Default select example" value="{{old('status')}}" name="status">
+									<option value="1" selected>Active</option>
+									<option value="0">Inactive</option>
+								</select>
+								</div>
+							</div>
+							</div>
+							<div class="form-group-select">
+								<div class="col-sm-9 col-sm-offset-3 col-lg-10 col-lg-offset-2">
+									<input type="submit"  value="Submit"  class="btn btn-primary" />
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--end::Form-->
+	</div>
+	<!--end::Card-->
+</div>
+<!--end::Wrapper-->
+@endsection

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fetch Data using API on Select Dropdown</title>
+</head>
+<body>
+    <h1>Select a Country Code:</h1>
+    <select id="plotDropdown">
+        <option value="">Select a Plot</option>
+        <option value="Plot 2">Plot 2</option>
+        <option value="Plot - 1">Plot - 1</option>
+        <option value="Plot 8">Plot 8</option>
+        <!-- Add more options here -->
+    </select>
+
+    <div id="dataDisplay">
+        <!-- Fetched data will be displayed here -->
+    </div>
+
+    <script src="script.js"></script>
+
+    <script>
+        // Function to fetch data from the API based on the selected country code
+function fetchData(ProductName) {
+    fetch(`https://crm.rscrealtydholera.com/plots?companycode=E62D13E9?${ProductName}`)
+        .then(response => response.json())
+        .then(dataArray => {
+
+            const selectedElement = dataArray.find(item => item.ProductName === ProductName);
+
+            // Update the UI with the fetched data
+            const dataDisplay = document.getElementById('dataDisplay');
+         
+            dataDisplay.innerHTML = `<h2>Customer Information</h2>
+                                <p>ProductName: ${selectedElement.ProductName}</p>
+                                <p>AreaSQY: ${selectedElement.AreaSQY}</p>
+                                <p>AreaSQM: ${selectedElement.AreaSQM}</p>
+                                <p>AreaSQF: ${selectedElement.AreaSQF}</p>
+                                <p>CustomerName: ${selectedElement.CustomerName}</p>
+                                <p>PlotStatus: ${selectedElement.PlotStatus}</p>`;
+        })
+        .catch(error => {
+            console.error('Error fetching data:', error);
+        });
+}
+
+// Event listener for the dropdown selection
+document.getElementById('plotDropdown').addEventListener('change', function() {
+    const ProductName = this.value;
+    
+    if (ProductName) {
+        fetchData(ProductName);
+    } else {
+        // Clear the data display if no option is selected
+        const dataDisplay = document.getElementById('dataDisplay');
+        dataDisplay.innerHTML = '';
+    }
+});
+
+    </script>
+  
+</body>
+</html>

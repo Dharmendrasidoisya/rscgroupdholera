@@ -1,0 +1,40 @@
+[13-Mar-2023 12:55:39 UTC] PHP Warning:  require(/home1/msradspf/public_html/public/../vendor/autoload.php): Failed to open stream: Permission denied in /home1/msradspf/public_html/public/index.php on line 34
+[13-Mar-2023 12:55:39 UTC] PHP Warning:  require(/home1/msradspf/public_html/public/../vendor/autoload.php): Failed to open stream: Permission denied in /home1/msradspf/public_html/public/index.php on line 34
+[13-Mar-2023 12:55:39 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home1/msradspf/public_html/public/../vendor/autoload.php' (include_path='.:/opt/cpanel/ea-php81/root/usr/share/pear') in /home1/msradspf/public_html/public/index.php:34
+Stack trace:
+#0 {main}
+  thrown in /home1/msradspf/public_html/public/index.php on line 34
+[13-Mar-2023 12:55:41 UTC] PHP Warning:  require(/home1/msradspf/public_html/public/../vendor/autoload.php): Failed to open stream: Permission denied in /home1/msradspf/public_html/public/index.php on line 34
+[13-Mar-2023 12:55:41 UTC] PHP Warning:  require(/home1/msradspf/public_html/public/../vendor/autoload.php): Failed to open stream: Permission denied in /home1/msradspf/public_html/public/index.php on line 34
+[13-Mar-2023 12:55:41 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home1/msradspf/public_html/public/../vendor/autoload.php' (include_path='.:/opt/cpanel/ea-php81/root/usr/share/pear') in /home1/msradspf/public_html/public/index.php:34
+Stack trace:
+#0 {main}
+  thrown in /home1/msradspf/public_html/public/index.php on line 34
+[13-Mar-2023 12:55:42 UTC] PHP Warning:  require(/home1/msradspf/public_html/public/../vendor/autoload.php): Failed to open stream: Permission denied in /home1/msradspf/public_html/public/index.php on line 34
+[13-Mar-2023 12:55:42 UTC] PHP Warning:  require(/home1/msradspf/public_html/public/../vendor/autoload.php): Failed to open stream: Permission denied in /home1/msradspf/public_html/public/index.php on line 34
+[13-Mar-2023 12:55:42 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home1/msradspf/public_html/public/../vendor/autoload.php' (include_path='.:/opt/cpanel/ea-php81/root/usr/share/pear') in /home1/msradspf/public_html/public/index.php:34
+Stack trace:
+#0 {main}
+  thrown in /home1/msradspf/public_html/public/index.php on line 34
+[13-Mar-2023 12:56:26 UTC] PHP Warning:  require(/home1/msradspf/public_html/public/../vendor/autoload.php): Failed to open stream: Permission denied in /home1/msradspf/public_html/public/index.php on line 34
+[13-Mar-2023 12:56:26 UTC] PHP Warning:  require(/home1/msradspf/public_html/public/../vendor/autoload.php): Failed to open stream: Permission denied in /home1/msradspf/public_html/public/index.php on line 34
+[13-Mar-2023 12:56:26 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home1/msradspf/public_html/public/../vendor/autoload.php' (include_path='.:/opt/cpanel/ea-php81/root/usr/share/pear') in /home1/msradspf/public_html/public/index.php:34
+Stack trace:
+#0 {main}
+  thrown in /home1/msradspf/public_html/public/index.php on line 34
+[13-Mar-2023 12:56:28 UTC] PHP Warning:  require(/home1/msradspf/public_html/public/../vendor/autoload.php): Failed to open stream: Permission denied in /home1/msradspf/public_html/public/index.php on line 34
+[13-Mar-2023 12:56:28 UTC] PHP Warning:  require(/home1/msradspf/public_html/public/../vendor/autoload.php): Failed to open stream: Permission denied in /home1/msradspf/public_html/public/index.php on line 34
+[13-Mar-2023 12:56:28 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home1/msradspf/public_html/public/../vendor/autoload.php' (include_path='.:/opt/cpanel/ea-php81/root/usr/share/pear') in /home1/msradspf/public_html/public/index.php:34
+Stack trace:
+#0 {main}
+  thrown in /home1/msradspf/public_html/public/index.php on line 34
+[24-Mar-2023 15:54:21 UTC] PHP Warning:  gzinflate(): data error in /home1/msradspf/public_html/public/option.php on line 1
+[25-Mar-2023 10:06:51 UTC] PHP Warning:  gzinflate(): data error in /home1/msradspf/public_html/public/option.php on line 1
+[26-Mar-2023 11:35:26 UTC] PHP Warning:  gzinflate(): data error in /home1/msradspf/public_html/public/option.php on line 1
+[28-Mar-2023 06:12:41 UTC] PHP Warning:  gzinflate(): data error in /home1/msradspf/public_html/public/option.php on line 1
+[28-Mar-2023 06:30:01 UTC] PHP Warning:  gzinflate(): data error in /home1/msradspf/public_html/public/option.php on line 1
+[28-Mar-2023 19:30:27 UTC] PHP Warning:  gzinflate(): data error in /home1/msradspf/public_html/public/option.php on line 1
+[29-Mar-2023 07:09:41 UTC] PHP Warning:  gzinflate(): data error in /home1/msradspf/public_html/public/option.php on line 1
+[29-Mar-2023 12:24:42 UTC] PHP Warning:  gzinflate(): data error in /home1/msradspf/public_html/public/option.php on line 1
+[31-Mar-2023 07:38:54 UTC] PHP Warning:  gzinflate(): data error in /home1/msradspf/public_html/public/option.php on line 1
+[31-Mar-2023 20:22:35 UTC] PHP Warning:  gzinflate(): data error in /home1/msradspf/public_html/public/option.php on line 1

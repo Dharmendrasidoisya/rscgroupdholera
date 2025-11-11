@@ -1,0 +1,984 @@
+
+        #btnproduct:hover {
+            border-color: #ea4e38 !important;
+        }
+
+        .category-buttons {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-bottom: 10px;
+            margin-top: 10px;
+            justify-content: flex-start;
+        }
+
+        .category-btn {
+
+            border-radius: 15px;
+            padding: 6px 12px;
+            box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.05);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .category-btn:hover {
+            background: linear-gradient(145deg, #ea4e38, #ea4e38);
+            color: #fff;
+            border-color: #ea4e38;
+            box-shadow: 0 8px 20px rgba(171, 133, 60, 0.3);
+        }
+
+        .category-btn:focus {
+            outline: none;
+            box-shadow: 0 0 0 3px rgba(171, 133, 60, 0.3);
+        }
+
+        #btnproduct {
+            border-radius: 15px !important;
+        }
+
+        #btnproduct:hover {
+            border-radius: 15px !important;
+        }
+
+        .g-recaptcha {
+            transform: scale(1);
+            transform-origin: 0 0;
+        }
+
+        /* For mobile devices */
+        @media (max-width: 480px) {
+            .g-recaptcha {
+                transform: scale(0.7);
+                transform-origin: 0 0;
+            }
+        }
+  
+        .chat-box {
+            /* display: flex; */
+            justify-content: flex-start;
+            padding: 0px 0 0px;
+            font-family: 'Segoe UI', sans-serif;
+        }
+
+        .message-bubble {
+            background: #f2f4f6;
+            padding: 15px 10px;
+            border-radius: 20px 20px 20px 5px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            max-width: 400px;
+            position: relative;
+        }
+
+        .typing-text {
+
+            white-space: nowrap;
+            display: inline-block;
+            font-size: 14px;
+            font-weight: 500;
+            color: #0f2043 !important;
+            width: 0;
+
+        }
+
+
+
+        /* end //animation */
+        .textarea-container {
+            position: relative;
+        }
+
+        .fake-textarea {
+            border-radius: 6px;
+            /* padding: 12px;
+                        min-height: 80px; */
+            font-size: 14px;
+            /* background-color: #fff; */
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            align-items: normal;
+        }
+
+        .fake-textarea button {
+            background-color: #e5e5e5;
+            color: #0f2043;
+            /* border: 1px solid #0f2043 !important; */
+            padding: 6px 10px;
+            font-size: 14px;
+            border-radius: 15px;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+
+        .fake-textarea button:hover {
+            background-color: #000;
+            color: #fff;
+        }
+
+        .send-icon {
+            position: absolute;
+            right: 10px;
+            bottom: 10px;
+            color: #666;
+            cursor: pointer;
+        }
+
+        .chat-option-btn {
+            display: inline-block;
+            margin: 5px;
+            padding: 10px 18px;
+            background-color: #ea4e38;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            font-size: 14px;
+            font-weight: 500;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .chat-option-btn:hover {
+            background-color: #000;
+        }
+
+        .form-container {
+            display: none;
+        }
+
+        .form-container.lbl11 {
+            display: block;
+        }
+
+        .textarea-container {
+            margin-bottom: 10px;
+            position: relative;
+            max-width: 100%;
+        }
+
+        .formbold-form-input {
+            width: 100%;
+            padding: 6px 12px;
+            border-radius: 15px !important;
+            font-size: 15px;
+            font-weight: 500;
+            color: #333;
+            background: #fff;
+            border: 1px solid #ccc;
+            border-radius: 30px;
+            appearance: none;
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.05);
+            transition: all 0.3s ease-in-out;
+
+            background-repeat: no-repeat;
+            background-position: right 16px center;
+            background-size: 16px;
+        }
+
+        .formbold-form-input:focus {
+            outline: none;
+            border-color: #ab853c;
+            box-shadow: 0 0 0 3px rgba(171, 133, 60, 0.2);
+        }
+
+        .formbold-form-input option {
+            font-size: 15px;
+            padding: 10px;
+        }
+
+        .textarea-container {
+            position: relative;
+            display: inline-block;
+            width: 100%;
+            height: 65px;
+        }
+
+        .textarea-container textarea {
+            width: 100%;
+            padding-right: 40px;
+            /* Space for icon */
+            border: 1px solid #e0e0e0;
+            border-radius: 6px;
+            padding: 10px;
+            font-size: 12px;
+            resize: none;
+
+        }
+
+        .textarea-container .send-icon {
+            position: absolute;
+            right: 10px;
+            bottom: 10px;
+            cursor: pointer;
+            color: #a8a8a8;
+        }
+
+        .textarea-container .send-icon:hover {
+            color: #0056b3;
+        }
+
+        .lblcross {
+            color: #000 !important;
+        }
+  
+        /* 12 */
+        .btn-12 {
+            position: relative;
+            right: 20px;
+            bottom: 20px;
+            border: none;
+            box-shadow: none;
+            width: 130px;
+            height: 40px;
+            line-height: 42px;
+            -webkit-perspective: 230px;
+            perspective: 230px;
+        }
+
+        .btn-12 span {
+            background: rgb(0, 172, 238);
+            background: linear-gradient(0deg, rgba(0, 172, 238, 1) 0%, rgba(2, 126, 251, 1) 100%);
+            display: block;
+            position: absolute;
+            width: 130px;
+            height: 40px;
+            /* box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+           7px 7px 20px 0px rgba(0,0,0,.1),
+           4px 4px 5px 0px rgba(0,0,0,.1); */
+            border-radius: 5px;
+            margin: 0;
+            text-align: center;
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
+            -webkit-transition: all .3s;
+            transition: all .3s;
+        }
+
+        .btn-12 span:nth-child(1) {
+            box-shadow:
+                -7px -7px 20px 0px #fff9,
+                -4px -4px 5px 0px #fff9,
+                7px 7px 20px 0px #0002,
+                4px 4px 5px 0px #0001;
+            -webkit-transform: rotateX(90deg);
+            -moz-transform: rotateX(90deg);
+            transform: rotateX(90deg);
+            -webkit-transform-origin: 50% 50% -20px;
+            -moz-transform-origin: 50% 50% -20px;
+            transform-origin: 50% 50% -20px;
+        }
+
+        .btn-12 span:nth-child(2) {
+            -webkit-transform: rotateX(0deg);
+            -moz-transform: rotateX(0deg);
+            transform: rotateX(0deg);
+            -webkit-transform-origin: 50% 50% -20px;
+            -moz-transform-origin: 50% 50% -20px;
+            transform-origin: 50% 50% -20px;
+        }
+
+        .btn-12:hover span:nth-child(1) {
+            /* box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+           7px 7px 20px 0px rgba(0,0,0,.1),
+           4px 4px 5px 0px rgba(0,0,0,.1); */
+            -webkit-transform: rotateX(0deg);
+            -moz-transform: rotateX(0deg);
+            transform: rotateX(0deg);
+        }
+
+        .btn-12:hover span:nth-child(2) {
+            /* box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+           7px 7px 20px 0px rgba(0,0,0,.1),
+           4px 4px 5px 0px rgba(0,0,0,.1); */
+            color: transparent;
+            -webkit-transform: rotateX(-90deg);
+            -moz-transform: rotateX(-90deg);
+            transform: rotateX(-90deg);
+        }
+  
+        .form-container {
+            /* width: 360px; */
+            background: #fff;
+            border-radius: 20px;
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+            padding: 20px;
+            font-family: 'Arial', sans-serif;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .lblcross {
+            position: absolute;
+            right: 15px;
+            top: 5px;
+            font-size: 18px;
+            cursor: pointer;
+        }
+
+        .chat-box {
+            margin-top: 20px;
+        }
+
+        .message-bubble {
+            background: #f2f4f6;
+            padding: 15px 20px;
+            border-radius: 25px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            max-width: 90%;
+            font-size: 20px;
+            color: #000;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+            font-weight: 700;
+        }
+
+        .message-bubble .avatar {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+        }
+
+        .fake-textarea {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .fake-textarea button {
+            background: #fff;
+            border: 0px solid #ddd;
+            border-radius: 12px;
+            padding: 4px 9px;
+            font-size: 15px;
+            cursor: pointer;
+            text-align: left;
+            transition: all 0.2s ease-in-out;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        /* .fake-textarea button:hover {
+            background: #f0f7ff;
+            border-color: #1877f2;
+            } */
+
+        .fake-textarea button::after {
+            content: "➤";
+            color: #8b1d20;
+            font-weight: bold;
+            margin-left: 10px;
+        }
+
+        .lblp {
+            text-align: center;
+            font-size: 13px;
+            margin-top: 20px;
+            color: #666;
+        }
+
+        /* * {
+              box-sizing: border-box;
+          } */
+        @media screen and (min-device-width: 1360px) and (max-device-width: 1540px) {
+            .form-container textarea {
+                height: 40px !important;
+            }
+
+            .formbold-form-input {
+                padding: 0px 12px !important;
+            }
+        }
+
+        @media only screen and (max-width: 600px) {
+            .open-button {
+                bottom: 135px !important;
+                right: 15px !important;
+
+            }
+        }
+
+        @media screen and (min-device-width: 1360px) and (max-device-width: 1540px) {
+            .open-button {
+                right: 25px !important;
+            }
+        }
+
+        /* Button used to open the chat form - fixed at the bottom of the page */
+        .open-button {
+            background-color: #555;
+            color: white;
+            padding: 16px 20px;
+            border: none;
+            cursor: pointer;
+            opacity: 0.8;
+            position: fixed;
+            /* bottom: 90px;
+            right: 25px; */
+            bottom: 130px;
+            right: 51px;
+            width: 280px;
+        }
+
+        /* The popup chat - hidden by default */
+        .chat-popup {
+            display: none;
+            position: fixed;
+            bottom: 161px;
+            right: 15px;
+            /* border: 2px solid #f1f1f1; */
+            z-index: 9;
+            border-radius: 8px 8px 0px 0px;
+        }
+
+        /* Add styles to the form container */
+        .form-container {
+            /* max-width: 300px; */
+            padding: 10px;
+            background-color: white;
+            padding-top: 0px;
+        }
+
+        /* Full-width textarea */
+        .form-container textarea {
+            /* width: 100%;
+              padding: 15px;
+              margin: 5px 0 22px 0;
+              border: none;
+              background: #f1f1f1;
+              resize: none;
+              min-height: 200px; */
+
+            width: 100%;
+            padding: 5px 10px;
+            border-radius: 6px;
+            border: 1px solid #000;
+            background: white;
+            font-weight: 500;
+            font-size: 15px;
+            color: #000;
+            outline: none;
+            resize: none;
+        }
+
+        textarea::placeholder {
+            color: #000;
+
+        }
+
+        .lbla::placeholder {
+            color: #000 !important;
+            /* black color */
+        }
+
+        /* When the textarea gets focus, do something */
+        .form-container textarea:focus {
+            border-color: #6a64f1;
+            color: #000;
+            box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.05);
+        }
+
+        /* Set a style for the submit/send button */
+        .form-container .btn {
+            /* background-color: #04AA6D; */
+            color: rgb(0, 0, 0);
+            border: 1px solid #000 !important;
+            padding: 10px 10px;
+            border: none;
+            cursor: pointer;
+            /* width: 49%; */
+            width: 100%;
+            /* margin-bottom: 10px; */
+            opacity: 0.8;
+            border-radius: 6px;
+        }
+
+        .form-container .btn:hover {
+            background-color: #000;
+            color: #fff;
+            border: 1px solid #000 !important;
+
+            border-radius: 6px;
+        }
+
+        /* Add a red background color to the cancel button */
+        .form-container .cancel {
+            background-color: #000;
+        }
+
+        /* Add some hover effects to buttons */
+        .form-container .btn:hover,
+        .open-button:hover {
+            opacity: 1;
+        }
+
+        /* .se-pre-con {
+                        position: absolute;
+                    } */
+
+        .formbold-mb-5 {
+            margin-bottom: 5px;
+        }
+
+        .formbold-pt-3 {
+            padding-top: 12px;
+        }
+
+        .formbold-main-wrapper {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 0px;
+        }
+
+        .formbold-form-wrapper {
+            margin: 0 auto;
+            max-width: 550px;
+            width: 100%;
+            background: white;
+            border: 1px solid #e0e0e0;
+            border-radius: 8px;
+            display: none;
+        }
+
+        .formbold-form-wrapper.active {
+            display: block;
+        }
+
+        .formbold-form-label {
+            display: block;
+            font-weight: 500;
+            font-size: 12px;
+            color: #07074d;
+            margin-bottom: 0px;
+        }
+
+        .formbold-form-label-2 {
+            font-weight: 600;
+            font-size: 20px;
+            margin-bottom: 20px;
+        }
+
+        .formbold-form-input {
+            width: 100%;
+            padding: 5px 10px;
+            border-radius: 6px;
+            border: 1px solid #e0e0e0;
+            background: white;
+            font-weight: 500;
+            font-size: 12px;
+            color: #6b7280;
+            outline: none;
+            resize: none;
+        }
+
+        .formbold-form-input:focus {
+            border-color: #6a64f1;
+            box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.05);
+        }
+
+        .formbold-btn {
+            text-align: center;
+            font-size: 16px;
+            border-radius: 6px;
+            padding: 14px 32px;
+            border: none;
+            font-weight: 600;
+            background-color: #6a64f1;
+            color: white;
+            cursor: pointer;
+        }
+
+        .formbold-btn:hover {
+            box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.05);
+        }
+
+        .formbold--mx-3 {
+            margin-left: -12px;
+            margin-right: -12px;
+        }
+
+        .formbold-px-3 {
+            padding-left: 12px;
+            padding-right: 12px;
+        }
+
+        .flex {
+            display: flex;
+        }
+
+        .flex-wrap {
+            flex-wrap: wrap;
+        }
+
+        .w-full {
+            width: 100%;
+        }
+
+        .formbold-form-header {
+            background: #6a64f1;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 12px 36px;
+            border-radius: 8px 8px 0px 0px;
+        }
+
+        .formbold-form-header h3 {
+            font-weight: 700;
+            font-size: 20px;
+            color: white;
+        }
+
+        .formbold-form-header button {
+            color: white;
+            background: transparent;
+            border: none;
+        }
+
+        .formbold-chatbox-form {
+            padding: 32px 36px;
+        }
+
+        .formbold-action-buttons {
+            /* max-width: 550px; */
+            margin-left: auto;
+            margin-right: auto;
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            margin-top: 0px;
+        }
+
+        .formbold-action-btn {
+            width: 70px;
+            height: 70px;
+            /* background: #edf2fa; */
+            background: #ec3237;
+            color: white;
+            border-radius: 50%;
+            margin-left: 20px;
+            border: none;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .formbold-action-btn .formbold-cross-icon {
+            display: none;
+        }
+
+        .formbold-action-btn.active .formbold-cross-icon {
+            display: block;
+        }
+
+        .formbold-action-btn.active .formbold-chat-icon {
+            display: none;
+        }
+
+        .lblh1 {
+            /* background: #000; */
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 5px 50px !important;
+            border-radius: 8px 8px 0px 0px;
+            font-size: 14px;
+            color: #fff !important;
+        }
+
+        .lbla {
+            color: #000 !important;
+        }
+
+        .lblm-b {
+            margin-bottom: 20px;
+        }
+
+        .lblp {
+            color: black !important;
+            display: flex;
+            margin-bottom: 0px;
+            font-size: 14px;
+        }
+
+        .lblcancle {
+            background-color: #ab853c;
+            color: #fff !important;
+            border: 1px solid #ab853c !important;
+            padding: 10px 10px;
+            cursor: pointer;
+            width: 48%;
+            margin-bottom: 10px;
+            line-height: 12px;
+            border-radius: 6px;
+            margin-bottom: 0px !important;
+        }
+
+        .banner-area .box-cell,
+        .banner-area .box-cell div,
+        .banner-area.auto-height,
+        .banner-area.auto-height div {
+            z-index: 1;
+        }
+
+        .btn {
+            line-height: 12px;
+        }
+
+        input {
+            min-height: 0px;
+        }
+
+        .d-n {
+            display: none;
+        }
+
+        .lblcross {
+            color: #000;
+            text-align: end;
+            font-weight: 800;
+            cursor: pointer;
+        }
+
+        .lblchat {
+            background: #F2F2F2;
+            padding: 10px;
+            border-radius: 20px 20px 20px 5px;
+            margin-bottom: 10px;
+
+        }
+
+        .lblchath1 {
+            font-size: 20px;
+            font-weight: 600;
+            color: #000 !important;
+            margin: 0 0 0px !important;
+
+        }
+
+        .lblh3 {
+            color: #000 !important;
+            font-size: 20px;
+            text-align: center;
+            font-weight: 600;
+            margin-bottom: 5px;
+        }
+
+        .lblp1 {
+            color: #000 !important;
+            font-size: 14px;
+            line-height: 20px;
+            text-align: center;
+        }
+
+        .lbllabel {
+            color: #000;
+            font-size: 11px;
+            line-height: 15px;
+        }
+
+        .divp {
+            color: #000 !important;
+            font-size: 12px;
+            line-height: 18px;
+            margin-top: 50px;
+            background: rgb(250, 251, 251);
+            padding: 10px;
+            border-radius: 8px;
+        }
+
+        .lblbefore {
+            margin-top: 50px;
+        }
+
+        .divp a {
+            color: #000 !important;
+            border-bottom: 1px solid;
+        }
+  
+        /* 12 */
+        .btn-12 {
+            position: relative;
+            right: 20px;
+            bottom: 20px;
+            border: none;
+            box-shadow: none;
+            width: 130px;
+            height: 40px;
+            line-height: 42px;
+            -webkit-perspective: 230px;
+            perspective: 230px;
+        }
+
+        .btn-12 span {
+            background: rgb(0, 172, 238);
+            background: linear-gradient(0deg, rgba(0, 172, 238, 1) 0%, rgba(2, 126, 251, 1) 100%);
+            display: block;
+            position: absolute;
+            width: 130px;
+            height: 40px;
+            /* box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+           7px 7px 20px 0px rgba(0,0,0,.1),
+           4px 4px 5px 0px rgba(0,0,0,.1); */
+            border-radius: 5px;
+            margin: 0;
+            text-align: center;
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
+            -webkit-transition: all .3s;
+            transition: all .3s;
+        }
+
+        .btn-12 span:nth-child(1) {
+            box-shadow:
+                -7px -7px 20px 0px #fff9,
+                -4px -4px 5px 0px #fff9,
+                7px 7px 20px 0px #0002,
+                4px 4px 5px 0px #0001;
+            -webkit-transform: rotateX(90deg);
+            -moz-transform: rotateX(90deg);
+            transform: rotateX(90deg);
+            -webkit-transform-origin: 50% 50% -20px;
+            -moz-transform-origin: 50% 50% -20px;
+            transform-origin: 50% 50% -20px;
+        }
+
+        .btn-12 span:nth-child(2) {
+            -webkit-transform: rotateX(0deg);
+            -moz-transform: rotateX(0deg);
+            transform: rotateX(0deg);
+            -webkit-transform-origin: 50% 50% -20px;
+            -moz-transform-origin: 50% 50% -20px;
+            transform-origin: 50% 50% -20px;
+        }
+
+        .btn-12:hover span:nth-child(1) {
+            /* box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+           7px 7px 20px 0px rgba(0,0,0,.1),
+           4px 4px 5px 0px rgba(0,0,0,.1); */
+            -webkit-transform: rotateX(0deg);
+            -moz-transform: rotateX(0deg);
+            transform: rotateX(0deg);
+        }
+
+        .btn-12:hover span:nth-child(2) {
+            /* box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+           7px 7px 20px 0px rgba(0,0,0,.1),
+           4px 4px 5px 0px rgba(0,0,0,.1); */
+            color: transparent;
+            -webkit-transform: rotateX(-90deg);
+            -moz-transform: rotateX(-90deg);
+            transform: rotateX(-90deg);
+        }
+
+        .lbla {
+            text-align: justify !important;
+        }
+
+        input {
+            height: 40px;
+            /* border: 0 */
+        }
+
+        input {
+            height: 40px;
+            padding: 0 12px 0 9px;
+            padding-right: 25px;
+
+            color: var(--body-color);
+            background-color: transparent;
+            border-radius: 8px;
+            font-size: 16px;
+            width: 100%;
+            font-family: var(--body-font);
+            -webkit-transition: 0.4s ease-in-out;
+            transition: 0.4s ease-in-out
+        }
+
+        input:focus {
+            outline: 0;
+            box-shadow: none;
+            border-color: #000 !important;
+            background-color: transparent
+        }
+ 
+        #new12 {
+            display: flex;
+            border: 1px solid #ec1111;
+            padding-bottom: 0rem !important;
+            margin: 10px;
+        }
+
+        @media only screen and (max-width: 600px) {
+            #new12 {
+                display: block;
+                border: 1px solid #ec1111;
+                padding-bottom: 0rem !important;
+                margin: 10px;
+            }
+
+            #new12 article {
+                width: 100%;
+            }
+        }
+
+        html .lblbg {
+            background-color: #fff !important;
+        }
+
+        .lblfooter {
+            padding-bottom: 1rem !important;
+        }
+
+        .bg-200-dicdl {
+            background-color: #f7f7f7 !important;
+            color: #212529;
+        }
+
+        .dicdl-smart-card-main {
+            padding: 0 25px;
+            text-align: center;
+        }
+
+        .dicdl-smart-card {
+            padding: 20px;
+            box-shadow: 0 5px 15px 2px rgba(0, 0, 0, 0.19);
+            background-clip: border-box;
+            border-radius: 10px;
+        }
+
+        .pb16 {
+            padding-bottom: 16px !important;
+        }
+
+        .pt16 {
+            padding-top: 16px !important;
+        }
+
+        .dicdl-smart-title {
+            font-weight: bold;
+            text-align: center;
+            padding-top: 20px;
+            font-size: 16px;
+        }
+
+        .card-img-top {
+            width: 70px;
+            height: 70px;
+            border-top-left-radius: calc(0.25rem - 1px);
+            border-top-right-radius: calc(0.25rem - 1px);
+        }
+
+        .bg-white {
+            background-color: #FFFFFF !important;
+            color: #212529;
+        }
+ 
