@@ -77,36 +77,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     if (empty($msg)) {
         echo "<script>alert('Message is required.'); window.history.back();</script>"; exit;
     }
-//6. Google Captcha
-$recaptcha_secret = '6LfgxgcsAAAAAHiQZ_-hJIU0vwsngx7Cp2_yIzEz'; // v2 secret key
-$recaptcha_response = $_POST['g-recaptcha-response'] ?? '';
 
-if (empty($recaptcha_response)) {
-    echo "<script>alert('Please complete the CAPTCHA.');window.history.back();</script>";
-    exit;
-}
 
-// Verify with Google
-$verify_url = 'https://www.google.com/recaptcha/api/siteverify';
-$data = [
-    'secret' => $recaptcha_secret,
-    'response' => $recaptcha_response,
-    'remoteip' => $_SERVER['REMOTE_ADDR'] ?? null
-];
-
-$ch = curl_init($verify_url);
-curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
-curl_setopt($ch, CURLOPT_POSTFIELDS, http_build_query($data));
-$response = curl_exec($ch);
-curl_close($ch);
-
-$decoded = json_decode($response, true);
-
-// Only proceed if CAPTCHA passed
-if (!$decoded['success']) {
-    echo "<script>alert('CAPTCHA verification failed. Please try again.');window.history.back();</script>";
-    exit;
-}
     // --- Prepare Email Body ---
     $messageb  = "<font face='arial' size='3'><b>Get It From RSC Group Dholera</b><br>===============<br>";
     $messageb .= "<br><font face='arial' size='2'> Name : $name<br>";
